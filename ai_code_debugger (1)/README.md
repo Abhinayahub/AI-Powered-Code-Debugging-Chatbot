@@ -22,13 +22,13 @@ AI Code Debugger is a Python-based intelligent system that analyzes code, detect
 
 ## ▶️ How to Run
 
-1. Clone repo:
-   git clone https://github.com/Abhinayahub/ai_code_debugger.git
+1. ## ▶️ Clone Repository
 
-2. Navigate:
-   cd ai_code_debugger
+1.```bash
+git clone https://github.com/Abhinayahub/AI-Powered-Code-Debugging-Chatbot.git
+cd AI-Powered-Code-Debugging-Chatbot
 
-3. Install dependencies:
+2. Install dependencies:
    pip install -r requirements.txt
 
 4. Run:
