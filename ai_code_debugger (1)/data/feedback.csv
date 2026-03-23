@@ -1,0 +1,19 @@
+import os
+
+st.markdown("### 🙋 Feedback")
+feedback = st.text_area("Let us know your thoughts:")
+
+if st.button("Submit Feedback"):
+    if feedback.strip():
+        feedback_path = "data/feedback.csv"
+
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(feedback_path), exist_ok=True)
+
+        # Append feedback to CSV
+        with open(feedback_path, "a", encoding="utf-8") as f:
+            f.write(f"{language},{feedback.strip()}\n")
+
+        st.success("✅ Thanks for your feedback!")
+    else:
+        st.warning("⚠ Please enter feedback before submitting.")
